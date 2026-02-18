@@ -12,6 +12,15 @@ header{
 	align-items: center;
 	background-color: #ffffff;
 }
+.logo-link{
+	transition: opacity 0.4s ease;
+}
+.logo-link:hover{
+	opacity: 0.8;
+}
+.logo-link:active{
+	opacity: 0.6;
+}
 /* <!-- SITENAV --> */
 .nav{
 	display: flex;
@@ -21,9 +30,7 @@ header{
 	display: flex;
 	align-items: center;
 }
-.nav a:hover{
-	background-color: #FF7500;
-}
+
 .nav a{
 	line-height: 15px;
 	font-weight: 500;
@@ -32,6 +39,16 @@ header{
 	color: #000;
 	list-style: none;
 	text-decoration:none;
+	transition:
+	color 0.4s ease,
+	opacity 0.4s ease;
+}
+.nav a:hover{
+	color: #FF7500;
+}
+.nav a:active{
+	opacity: 0.6;
+
 }
 /* <!--HERO  --> */
 .hero{
@@ -53,6 +70,13 @@ header{
 	background-color: #FF7500;
 	color: #fff;
 	text-decoration: none;
+	transition:
+	color 0.4s ease,
+	opacity 0.4s ease;
+}
+.btn:hover{
+	background-color: aqua;
+	color: #FF7500;
 }
 .orange-line{
 	width: 80px;
