@@ -4,13 +4,20 @@ body{
 	font-family: "Roboto",sans-serif;
 	letter-spacing: 0.5px;
 }
+*:focus{
+	outline: 2px solid #FF7500;
+	outline-offset: 3px;
+}
 
 /* <!-- headr --> */
 header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	background-color: #ffffff;
+	border-top: 5px solid #FF7500;
 }
 .logo-link{
 	transition: opacity 0.4s ease;
@@ -23,6 +30,7 @@ header{
 }
 /* <!-- SITENAV --> */
 .nav{
+	padding: 0;
 	display: flex;
 	list-style-type: none;
 }
@@ -55,6 +63,8 @@ header{
 
 	background-color:#252420;
 	color: #ffffff;
+	padding-left: 80px;
+	padding-left: 80px;
 
 }
 .hero-hero{
@@ -65,23 +75,33 @@ header{
 .hero-content{
 	width: 390px;
 }
+.hero img{
+	border-radius: 8px;
+
+
+}
 .btn{
+	display: inline-block;
 	line-height: 15px;
 	background-color: #FF7500;
 	color: #fff;
+	padding: 12px 24px;
 	text-decoration: none;
 	transition:
 	color 0.4s ease,
 	opacity 0.4s ease;
+	border-radius: 4px;
+	font-weight: bold;
 }
 .btn:hover{
-	background-color: aqua;
+	background-color: rgb(0, 0, 0);
 	color: #FF7500;
 }
 .orange-line{
 	width: 80px;
 	height: 3px;
 	background-color:#FF7500;
+	border: none;
 }
 
 .hero-heading{
@@ -93,7 +113,10 @@ header{
 }
 
 /* <!-- FEATURES --> */
-
+.features{
+	padding-top: 210px;
+	padding-bottom: 210px;
+}
 .features h2{
 	width: 440px;
 	font-weight: 700;
@@ -101,6 +124,10 @@ header{
 	font-family: "Roboto Condensed",sans-serif;
 	line-height: 1.2;
 	letter-spacing: 0.5px;
+  top: 821px;
+  padding-left: 170px;
+
+
 }
 .features h3{
 	width: 214px;
@@ -117,6 +144,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
+	padding: 0;
 }
 
  /* <!-- PROMO --> */
@@ -124,6 +152,8 @@ header{
  .promo{
 	background-color:#252420;
 	border-radius: 12px;
+	padding-top: 120px;
+	padding-bottom: 160px;
 	color: #ffffff;
 }
 .promo-promo{
@@ -142,12 +172,28 @@ header{
 .promo p{
 	width: 440px;
 	height: 108px;
-
+}
+.promo img{
+	width: 440px;
+	height: 440px;
+	border-radius: 12px;
+	object-fit: cover;
 }
 .contact{
+	padding: 0;
 	display: flex;
 	align-items: center;
 	list-style-type: none;
+}
+.contact a{
+	color: #252420;
+	transition: all 0.4s ease;
+}
+.contact a:hover{
+	color: #FF7500;
+}
+.contact a:active{
+	opacity: 0.6;
 }
 strong{
 	color:#FF7500;
@@ -155,10 +201,13 @@ strong{
 .site-footer-top{
 	display: flex;
 	justify-content: space-between;
+	padding-top: 56px;
+	padding-bottom: 56px;
 	align-items: center;
 }
 /* <!-- FOOTER --> */
 footer{
+	padding: 0;
 	background-color: #f8f8f8;
 	display:flex;
 	width: 100%;
@@ -170,12 +219,18 @@ footer a{
 	text-decoration: none;
 	line-height: 100%;
 	line-height: 30px;
+	transition: opacity ;
 	}
+footer a:hover{
+	opacity: 0.4;
+}
 footer ul{
 	width: 224px;
 	list-style-type: none;
+	padding: 0;
 }
 .site-footer-divider{
 	background-color: #25242080;
 	height: 2px;
+	border: 0;
 }
