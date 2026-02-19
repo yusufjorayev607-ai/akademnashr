@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,701;1,701&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -24,12 +25,12 @@
     <!-- SITENAV -->
     <div class="navbarnav">
       <ul class="nav">
-        <li><a href="#">Bosh sahifa</a></li>
-        <li><a href="#">Kitoblar</a></li>
-        <li><a href="#">Aksiyalar</a></li>
-        <li><a href="#">Kontaktlar</a></li>
-        <li><a class="btn" href="#">Ro`yhatan o`tish</a></li>
+        <li><a class="nav-link" href="#">Bosh sahifa</a></li>
+        <li><a class="nav-link" href="#">Kitoblar</a></li>
+        <li><a class="nav-link" href="#">Aksiyalar</a></li>
+        <li><a class="nav-link" href="#">Kontaktlar</a></li>
       </ul>
+      <a class="btn" href="#">Ro`yhatan o`tish</a>
     </div>
   </header>
 
@@ -93,11 +94,15 @@
         <div class="aksiya-content">
           <h2>Bolalar kitoblari uchun
             ajoyib aksiya!</h2>
-          <p>Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun turli mashq qo’llanmalari va komikslar.
-          </p>
-          <p>Aksiyadagi eng katta to’plamda <strong>50 ta kitob</strong>ni <strong>350 ming </strong> so’mga (aslida 383
-            ming
-            so’m) sotib olishingiz mumkin.</p>
+          <div class="promo-text">
+            <p>Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun turli mashq qo’llanmalari va
+              komikslar.
+            </p>
+            <p>Aksiyadagi eng katta to’plamda <strong>50 ta kitob</strong>ni <strong>350 ming </strong> so’mga (aslida
+              383
+              ming
+              so’m) sotib olishingiz mumkin.</p>
+          </div>
           <a class="btn" href="#">ro`yhatan o`tish</a>
         </div>
         <img src="img/sale-img.jpg" alt="aksiya" width="440" height="440">
