@@ -1,4 +1,12 @@
+* {
+box-sizing: border-box;
+}
+
+
+
 body{
+	padding: 0;
+	margin: 0;
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Roboto",sans-serif;
@@ -8,16 +16,26 @@ body{
 	outline: 2px solid #FF7500;
 	outline-offset: 3px;
 }
+.container{
+	width: 100%;
+	min-width: 110px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* <!-- headr --> */
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.site-header{
 	padding-top: 16px;
 	padding-bottom: 16px;
-	background-color: #ffffff;
 	border-top: 5px solid #FF7500;
+	background-color: #ffffff;
+}
+.site-header-container {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .logo-link{
 	transition: opacity 0.4s ease;
@@ -27,6 +45,9 @@ header{
 }
 .logo-link:active{
 	opacity: 0.6;
+}
+.logo-link img{
+	display: block;
 }
 /* <!-- SITENAV --> */
 .nav{
@@ -67,6 +88,11 @@ header{
 	color: #ffffff;
 	padding-left: 80px;
 	padding-left: 80px;
+}
+.hero-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .hero-hero{
 	display: flex;
@@ -124,6 +150,11 @@ header{
 	padding-top: 210px;
 	padding-bottom: 210px;
 }
+/* .features-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
 .features h2{
 	width: 440px;
 	font-weight: 700;
@@ -209,16 +240,20 @@ header{
 .contact a{
 	color: #252420;
 	transition: all 0.4s ease;
-	margin-left: 16px;
+	margin-right: 16px;
+	display: block;
 }
-.contact li:last-child{
-	margin-left: 0;
+.contact ul:last-child{
+	margin-right: 0;
 }
 .contact a:hover{
 	color: #FF7500;
 }
 .contact a:active{
 	opacity: 0.6;
+}
+.contact svg{
+	display: block;
 }
 strong{
 	color:#FF7500;
